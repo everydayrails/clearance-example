@@ -15,7 +15,7 @@
   <%= @item.price %>
 </p>
 
-<% if signed_in? %>
+<% if signed_in_as_admin? %>
   <%= link_to 'Edit', edit_item_path(@item) %> |
 <% end %>
 <%= link_to 'Back', items_path %>
