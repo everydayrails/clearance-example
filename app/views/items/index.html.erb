@@ -19,7 +19,7 @@
         <td><%= item.description %></td>
         <td><%= item.price %></td>
         <td><%= link_to 'Show', item %></td>
-        <% if signed_in? %>
+        <% if signed_in_as_admin? %>
           <td><%= link_to 'Edit', edit_item_path(item) %></td>
           <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path if signed_in? %>
+<%= link_to 'New Item', new_item_path if signed_in_as_admin? %>
