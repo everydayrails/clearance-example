@@ -60,3 +60,4 @@ group :development do
 end
 
 gem "clearance"
+gem "bootstrap-sass"
