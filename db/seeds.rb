@@ -7,3 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create(email: "admin@example.com", password: "secret123", admin: true)
+User.create(email: "customer@example.com", password: "secret123", admin: false)
+
+Item.create(
+  name: "Hologram projector",
+  description: "Watch home movies in style",
+  price: 499,
+)
